@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TodoList {
-    private List<String> tasks = new ArrayList<>();
+    private List<Task> tasks = new ArrayList<>();
 
-    public void addTask(String task) {
+    public void addTask(Task task) {
         tasks.add(task);
     }
 
-    public boolean removeTask(String task) {
+    public boolean removeTask(Task task) {
         return tasks.remove(task);
     }
 
-    public List<String> getTasks() {
+    public List<Task> getTasks() {
         return tasks;
     }
 
