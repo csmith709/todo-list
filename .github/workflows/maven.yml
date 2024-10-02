@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-java@v4  # Updated to the latest version compatible with Node.js 20
       with:
         java-version: '17'
+        distribution: 'temurin'
+        cache: maven
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
